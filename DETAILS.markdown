@@ -12,11 +12,11 @@ On those macOS machines where I install Homebrew I also edit `/etc/paths` to mov
     /usr/sbin
     /sbin
 
-The `~/.dotfiles/brew/Brewfile` acts as a bundle for Homebrew. Use `brew bundle ~/.dotfiles/brew/Brewfile` to set up brews.
+The `~/.dotfiles/brew/Brewfile` acts as a bundle for Homebrew. Use `brew bundle --file=~/.dotfiles/brew/Brewfile` to set up brews.
 
 ## bash
 For those machines where zsh isn't installed or won't easily work, create the
-following symlinks:
+following symlinks(looks like this is completed as part of running the install.sh)
 
     $ ln -s ~/.dotfiles/bash/bash_profile ~/.bash_profile
     $ ln -s ~/.dotfiles/bash/bashrc ~/.bashrc
