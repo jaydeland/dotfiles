@@ -12,7 +12,6 @@ install tmux
 
 # Version Control
 install git
-install mercurial
 
 # Editor
 install vim
