@@ -1,0 +1,34 @@
+# A few of my favorite brews
+
+# tmux, requires `reattach-to-user-namespace`
+install 'reattach-to-user-namespace'
+install tmux
+
+# Version Control
+install git
+
+# Editor
+install vim
+
+# For compiling older libraries
+tap homebrew/dupes
+install apple-gcc42
+
+# Utilities
+install archey
+install wget
+install youtube-dl
+install openssl
+install htop-osx
+
+# HandBrake required library
+install libdvdcss
+
+# OpenConnect
+install openconnect
+
+# Cleanup any outdated formulas from the cellar
+cleanup
+
+# Ask the doctor how things are
+doctor

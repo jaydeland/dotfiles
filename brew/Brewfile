@@ -1,40 +1,26 @@
-# A few of my favorite brews
-
-# Make sure we’re using the latest Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
-
-# tmux, requires `reattach-to-user-namespace`
-install reattach-to-user-namespace
-install tmux
-
-# Version Control
-install git
-
-# Editor
-install vim
-
-# For compiling older libraries
-tap homebrew/dupes
-install apple-gcc42
-
-# Utilities
-install archey
-install wget
-install youtube-dl
-install openssl
-install htop-osx
-
-# HandBrake required library
-install libdvdcss
-
-# OpenConnect
-install openconnect
-
-# Cleanup any outdated formulas from the cellar
-cleanup
-
-# Ask the doctor how things are
-doctor
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/dupes"
+tap "homebrew/services"
+tap "homebrew/versions"
+brew "bash"
+brew "cask"
+brew "git"
+brew "consul", restart_service: true
+brew "docker"
+brew "docker-compose"
+brew "htop-osx"
+brew "node"
+brew "nvm"
+brew "openssl"
+brew "terraform"
+brew "vault"
+brew "wget"
+cask "cakebrew"
+cask "consul-cli"
+cask "java"
+cask "kitematic"
+cask "lastpass"
+cask "spotify"
+cask "vagrant"
